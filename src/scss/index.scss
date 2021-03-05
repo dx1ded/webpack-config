@@ -1,90 +1,9 @@
 @import '~normalize.css';
 
-*::after,
+*,
 *::before,
-* {
+*::after {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
-
-body {
-  background: #fff;
-  font-family: 'Montserrat';
-}
-
-.wrapper {
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-.title {
-  font-family: 'Kaushan Script';
-  font-weight: 400;
-  font-size: 24px;
-  color: #333333;
-  text-align: center;
-}
-
-.subtitle {
-  font-weight: 700;
-  font-size: 30px;
-  color: #333333;
-  text-transform: uppercase;
-  text-align: center;
-  margin-top: 15px;
-
-  @media (max-width: 375px) {
-    font-size: 25px;
-  }
-
-  &::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: #f38181;
-    margin: 40px auto;
-
-    @media (max-width: 1024px) {
-      margin: 30px auto;
-    }
-  }
-}
-
-.text {
-  font-family: 'Roboto';
-  font-weight: 400;
-  font-size: 15px;
-  text-align: center;
-  line-height: 1.6em;
-  max-width: 950px;
-  margin: 0 auto;
-  color: #999999;
-
-  @media (max-width: 425px) {
-    font-size: 14px;
-  }
-}
-
-// Sections
-
-@import 'header';
-@import 'about';
-@import 'stats';
-@import 'services';
-@import 'devices';
-@import 'info';
-@import 'reviews';
-@import 'team';
-@import 'brands';
-@import 'gallery';
-@import 'comments';
-@import 'clients';
-@import 'blog';
-@import 'map';
-@import 'footer';
-
-// Components
-
-@import 'burger';
