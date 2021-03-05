@@ -1,0 +1,124 @@
+.comments {
+  padding: 0 10px 100px;
+
+  @media (max-width: 1024px) {
+    padding: 0px 10px 50px;
+  }
+
+  .wrapper {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+
+  &__action {
+    cursor: pointer;
+
+    @media (max-width: 425px) {
+      position: absolute;
+      top: 20%;
+      transform: translateY(-20%);
+    }
+
+    &.left {
+      @media (max-width: 425px) {
+        left: 0;
+        transform: translateX(-0%);
+      }
+
+      img {
+        transform: rotate(90deg);
+        margin-right: 30px;
+
+        @media (max-width: 425px) {
+          margin-right: 0;
+        }
+      }
+    }
+
+    &.right {
+      @media (max-width: 425px) {
+        left: 100%;
+        transform: translateX(-100%);
+      }
+
+      img {
+        transform: rotate(-90deg);
+        margin-right: 30px;
+
+        @media (max-width: 425px) {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 20px 0;
+    }
+
+    .container {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-left: 30px;
+
+      @media (max-width: 1024px) {
+        margin-left: 15px;
+      }
+
+      @media (max-width: 768px) {
+        margin-left: 0;
+      }
+    }
+
+    &-text {
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-style: italic;
+      font-size: 24px;
+      line-height: 1.5em;
+      max-width: 800px;
+      color: #999999;
+
+      @media (max-width: 1024px) {
+        font-size: 22px;
+      }
+
+      @media (max-width: 768px) {
+        font-size: 20px;
+      }
+
+      @media (max-width: 458px) {
+        font-size: 18px;
+      }
+    }
+
+    &-author {
+      font-family: 'Kaushan Script';
+      font-weight: 400;
+      font-size: 24px;
+      color: #333333;
+      margin-top: 20px;
+
+      @media (max-width: 1024px) {
+        font-size: 22px;
+      }
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 60px;
+        height: 3px;
+        background: #f38181;
+        vertical-align: middle;
+        margin-right: 10px;
+      }
+    }
+  }
+}

@@ -66,13 +66,6 @@ module.exports = {
               outputPath: './',
               useRelativePath: true
             }
-          },
-
-          {
-            loader: 'webp-loader',
-            options: {
-              quality: 13
-            }
           }
         ]
       }

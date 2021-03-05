@@ -1,0 +1,33 @@
+.devices {
+  background: url('../assets/img/devices-background.jpg') no-repeat center / cover;
+  padding: 100px 10px 0;
+
+  @media (max-width: 1024px) {
+    padding: 50px 10px 0;
+  }
+
+  &__content {
+    text-align: center;
+
+    &-devices {
+      display: inline-block;
+      position: relative;
+    }
+
+    &-ipad {
+      max-width: 100%;
+    }
+
+    &-iphone {
+      position: absolute;
+      top: 100%;
+      left: 100%;
+      transform: translate(-100% + 40, -100% + 20);
+      max-width: 100%;
+
+      @media(max-width: 805px) {
+        display: none;
+      }
+    }
+  }
+}

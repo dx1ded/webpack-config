@@ -4,9 +4,874 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@400;500;700&family=Roboto:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+    <title>Mogo</title>
   </head>
   <body>
-    
+    <header class="header">
+      <div class="wrapper">
+        <div class="header__top">
+          <h2 class="header__logo">MoGo</h2>
+
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li class="header__item"><a href="#" class="header__link">About</a></li>
+              <li class="header__item"><a href="#" class="header__link">Service</a></li>
+              <li class="header__item"><a href="#" class="header__link">Work</a></li>
+              <li class="header__item"><a href="#" class="header__link">Blog</a></li>
+              <li class="header__item"><a href="#" class="header__link">Contact</a></li>
+              <li class="header__item"><a href="#"><img src="./assets/img/icons/shopping-cart.svg"></a></li>
+              <li class="header__item"><a href="#"><img src="./assets/img/icons/magnifying-glass.svg"></a></li>
+            </ul>
+          </nav>
+
+          <div class="header__burger burger__button">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
+        </div>
+
+        <div class="header__content">
+          <h2 class="header__content-title">Creative Template</h2>
+          <h2 class="header__content-subtitle">Welcome to MoGo</h2>
+          <a href="#" class="header__content-link">Learn More</a>
+        </div>
+
+        <div class="header__slider">
+          <div class="slider__item">
+            <div class="slider__progress"></div>
+            <h2 class="slider__text">Intro</h2>
+          </div>
+
+          <div class="slider__item">
+            <div class="slider__progress"></div>
+            <h2 class="slider__text">Work</h2>
+          </div>
+
+          <div class="slider__item">
+            <div class="slider__progress"></div>
+            <h2 class="slider__text">About</h2>
+          </div>
+
+          <div class="slider__item">
+            <div class="slider__progress"></div>
+            <h2 class="slider__text">Contacts</h2>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <section class="burger">
+      <span class="burger__close burger__button">&times;</span>
+
+      <nav class="burger__nav">
+        <ul class="burger__list">
+          <li class="burger__item"><a href="#" class="burger__link">About</a></li>
+          <li class="burger__item"><a href="#" class="burger__link">Service</a></li>
+          <li class="burger__item"><a href="#" class="burger__link">Work</a></li>
+          <li class="burger__item"><a href="#" class="burger__link">Blog</a></li>
+          <li class="burger__item"><a href="#" class="burger__link">Contact</a></li>
+        </ul>
+      </nav>
+    </section>
+
+    <section class="about wrapper">
+      <h2 class="about__title title">What we do</h2>
+      <h2 class="about__subtitle subtitle">Story about Us</h2>
+
+      <p class="about__text text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+
+      <div class="about__cards">
+        <div class="card">
+          <div class="card__img">
+            <img src="./assets/img/about-img1.jpg" alt="Computer">
+          </div>
+          
+          <div class="card__content">
+            <img src="./assets/img/icons/users.svg" alt="Users" class="card__content-img">
+            <p class="card__content-text">Super Team</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <img src="./assets/img/about-img2.jpg" alt="Technics">
+          </div>
+          
+          <div class="card__content">
+            <img src="./assets/img/icons/users.svg" alt="Users" class="card__content-img">
+            <p class="card__content-text">Super Team</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card__img">
+            <img src="./assets/img/about-img3.jpg" alt="Table">
+          </div>
+          
+          <div class="card__content">
+            <img src="./assets/img/icons/users.svg" alt="Users" class="card__content-img">
+            <p class="card__content-text">Super Team</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats">
+      <div class="stats__container wrapper">
+        <div class="stats__item">
+          <h2 class="stats__item-count">42</h2>
+          <p class="stats__item-info">Web design projects</p>
+        </div>
+
+        <div class="stats__item">
+          <h2 class="stats__item-count">123</h2>
+          <p class="stats__item-info">Happy client</p>
+        </div>
+
+        <div class="stats__item">
+          <h2 class="stats__item-count">15</h2>
+          <p class="stats__item-info">Award winner</p>
+        </div>
+
+        <div class="stats__item">
+          <h2 class="stats__item-count">99</h2>
+          <p class="stats__item-info">Cup of coffee</p>
+        </div>
+
+        <div class="stats__item">
+          <h2 class="stats__item-count">24</h2>
+          <p class="stats__item-info">Members</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="services wrapper">
+      <h2 class="services__title title">We work with</h2>
+      <h2 class="services__subtitle subtitle">Amazing services</h2>
+
+      <div class="column slash">
+        <div class="service">
+          <img src="./assets/img/icons/alarm.svg" alt="Alarm" class="service__img">
+
+          <div class="container">
+            <h2 class="service__title">Photography</h2>
+            <p class="service__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            </p>
+          </div>
+        </div>
+
+        <div class="service">
+          <img src="./assets/img/icons/line-graph.svg" alt="Graph" class="service__img">
+
+          <div class="container">
+            <h2 class="service__title">Web Design</h2>
+            <p class="service__text">
+              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            </p>
+          </div>
+        </div>
+
+        <div class="service">
+          <img src="./assets/img/icons/computer.svg" alt="Computer" class="service__img">
+
+          <div class="container">
+            <h2 class="service__title">Creativity</h2>
+            <p class="service__text">
+              Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div class="column">
+        <div class="service">
+          <img src="./assets/img/icons/book.svg" alt="Book" class="service__img">
+
+          <div class="container">
+            <h2 class="service__title">Seo</h2>
+            <p class="service__text">
+              Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod.
+            </p>
+          </div>
+        </div>
+
+        <div class="service">
+          <img src="./assets/img/icons/house.svg" alt="House" class="service__img">
+
+          <div class="container">
+            <h2 class="service__title">CSS/HTML</h2>
+            <p class="service__text">
+              Lorem dolor sit amet, consectetur adipiscing elit, sed do tempor.
+            </p>
+          </div>
+        </div>
+
+        <div class="service">
+          <img src="./assets/img/icons/rectangle.svg" alt="Rectangle" class="service__img">
+
+          <div class="container">
+            <h2 class="service__title">Digital</h2>
+            <p class="service__text">
+              Sit amet, consectetur adipiscing elit, sed do eiusmod tempor.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="devices">
+      <div class="wrapper">
+        <h2 class="devices__title title">For all design</h2>
+        <h2 class="devices__subtitle subtitle">Unique design</h2>
+
+        <div class="devices__content">
+          <div class="devices__content-devices">
+            <img src="./assets/img/tablet.png" alt="Ipad" class="devices__content-ipad">
+            <img src="./assets/img/phone.png" alt="iPhone" class="devices__content-iphone">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info wrapper">
+      <h2 class="info__title title">Service</h2>
+      <h2 class="info__subtitle subtitle">What we do</h2>
+
+      <p class="info__text text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+
+      <div class="container">
+        <img src="./assets/img/info-img.jpg" alt="Human" class="info__img">
+
+        <div class="accordeon">
+          <div class="accordeon__item active">
+            <h2 class="accordeon__item-title">
+              <img src="./assets/img/icons/gallery.svg" alt="Gallery" class="accordeon__item-img">
+              Photography
+              <img src="./assets/img/icons/arrow.svg" alt="Arrow" class="accordeon__item-arrow">
+            </h2>
+
+            <p class="accordeon__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div class="accordeon__item">
+            <h2 class="accordeon__item-title">
+              <img src="./assets/img/icons/equalizer.svg" alt="Equalizer" class="accordeon__item-img">
+              Creativity
+              <img src="./assets/img/icons/arrow.svg" alt="Arrow" class="accordeon__item-arrow">
+            </h2>
+
+            <p class="accordeon__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+
+          <div class="accordeon__item">
+            <h2 class="accordeon__item-title">
+              <img src="./assets/img/icons/bullseye.svg" alt="Bullseye" class="accordeon__item-img">
+              Web Design
+              <img src="./assets/img/icons/arrow.svg" alt="Arrow" class="accordeon__item-arrow">
+            </h2>
+
+            <p class="accordeon__item-text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
+              aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
+              occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews">
+      <div class="wrapper">
+        <span class="reviews__action left">
+          <img src="./assets/img/icons/arrow.svg" alt="Arrow Left">
+        </span>
+
+        <div class="reviews__item">
+          <img src="./assets/img/comment.png" alt="Comment" class="reviews__item-img">
+
+          <div class="container">
+            <p class="reviews__item-text">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+            </p>
+
+            <h2 class="reviews__item-author">Jon Doe</h2>
+          </div>
+        </div>
+
+        <span class="reviews__action right">
+          <img src="./assets/img/icons/arrow.svg" alt="Arrow Right">
+        </span>
+      </div>
+    </section>
+
+    <section class="team wrapper">
+      <h2 class="team__title title">Who we are</h2>
+      <h2 class="team__subtitle subtitle">Meet our team</h2>
+
+      <p class="team__text text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+
+      <div class="container">
+        <div class="team__card">
+          <div class="team__card-img">
+            <img src="./assets/img/team_1.jpg" alt="Team">
+
+            <div class="team__card-content">
+              <div class="team__card-icon">
+                <svg width="12.031" height="25.62">
+                  <use href="#facebook" xlink:href="#facebook"></use>
+                </svg>
+              </div>
+
+              <div class="team__card-icon">
+                <svg width="25.594" height="20.79">
+                  <use href="#twitter" xlink:href="#twitter"></use>
+                </svg>
+              </div>
+
+              <div class="team__card-icon">
+                <svg width="19.594" height="25.62">
+                  <use href="#pinterest" xlink:href="#pinterest"></use>
+                </svg>
+              </div>
+
+              <div class="team__card-icon">
+                <svg width="25.594" height="25.62">
+                  <use href="#instagram" xlink:href="#instagram"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="team__card-fullname">Matthew Dix</h2>
+          <p class="team__card-position">Graphic Design</p>
+        </div>
+
+        <div class="team__card">
+          <div class="team__card-img">
+            <img src="./assets/img/team_2.jpg" alt="Team">
+
+            <div class="team__card-content">
+              <div class="team__card-icon">
+                <svg width="12.031" height="25.62">
+                  <use href="#facebook" xlink:href="#facebook"></use>
+                </svg>
+              </div>
+
+              <div class="team__card-icon">
+                <svg width="25.594" height="20.79">
+                  <use href="#twitter" xlink:href="#twitter"></use>
+                </svg>
+              </div>
+
+              <div class="team__card-icon">
+                <svg width="19.594" height="25.62">
+                  <use href="#pinterest" xlink:href="#pinterest"></use>
+                </svg>
+              </div>
+
+              <div class="team__card-icon">
+                <svg width="25.594" height="25.62">
+                  <use href="#instagram" xlink:href="#instagram"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="team__card-fullname">Christopher Campbell</h2>
+          <p class="team__card-position">Branding/UX design</p>
+        </div>
+
+        <div class="team__card">
+          <div class="team__card-img">
+            <img src="./assets/img/team_3.jpg" alt="Team">
+
+            <div class="team__card-content">
+              <div class="team__card-icon">
+                <svg width="12.031" height="25.62">
+                  <use href="#facebook" xlink:href="#facebook"></use>
+                </svg>
+              </div>
+
+              <div class="team__card-icon">
+                <svg width="25.594" height="20.79">
+                  <use href="#twitter" xlink:href="#twitter"></use>
+                </svg>
+              </div>
+
+              <div class="team__card-icon">
+                <svg width="19.594" height="25.62">
+                  <use href="#pinterest" xlink:href="#pinterest"></use>
+                </svg>
+              </div>
+
+              <div class="team__card-icon">
+                <svg width="25.594" height="25.62">
+                  <use href="#instagram" xlink:href="#instagram"></use>
+                </svg>
+              </div>
+            </div>
+          </div>
+
+          <h2 class="team__card-fullname">Michael Fertig</h2>
+          <p class="team__card-position">Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="brands">
+      <div class="wrapper">
+        <div class="brand"><img src="./assets/img/brand_1.png" alt="Brand" class="brand__img"></div>
+        <div class="brand"><img src="./assets/img/brand_2.png" alt="Brand" class="brand__img"></div>
+        <div class="brand"><img src="./assets/img/brand_3.png" alt="Brand" class="brand__img"></div>
+        <div class="brand"><img src="./assets/img/brand_4.png" alt="Brand" class="brand__img"></div>
+        <div class="brand"><img src="./assets/img/brand_5.png" alt="Brand" class="brand__img"></div>
+        <div class="brand"><img src="./assets/img/brand_6.png" alt="Brand" class="brand__img"></div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <h2 class="gallery__title title">What we do</h2>
+      <h2 class="gallery__subtitle subtitle">Some of our work</h2>
+
+      <p class="gallery__text text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+        aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+      </p>
+
+      <div class="gallery__images">
+        <div class="column">
+          <div class="gallery__img">
+            <img src="./assets/img/gallery_1.jpg" alt="Human">
+
+            <div class="gallery__content">
+              <img src="./assets/img/icons/picture.svg" alt="Picture" class="gallery__content-img">
+
+              <h2 class="gallery__content-title">Creatively designed</h2>
+              <p class="gallery__content-text">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+
+          <div class="gallery__img">
+            <img src="./assets/img/gallery_2.jpg" alt="Bridge">
+
+            <div class="gallery__content">
+              <img src="./assets/img/icons/picture.svg" alt="Picture" class="gallery__content-img">
+
+              <h2 class="gallery__content-title">Creatively designed</h2>
+              <p class="gallery__content-text">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="gallery__img">
+            <img src="./assets/img/gallery_3.jpg" alt="Ceiling">
+
+            <div class="gallery__content">
+              <img src="./assets/img/icons/picture.svg" alt="Picture" class="gallery__content-img">
+
+              <h2 class="gallery__content-title">Creatively designed</h2>
+              <p class="gallery__content-text">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+          
+          <div class="gallery__img">
+            <img src="./assets/img/gallery_4.jpg" alt="Ceiling">
+
+            <div class="gallery__content">
+              <img src="./assets/img/icons/picture.svg" alt="Picture" class="gallery__content-img">
+
+              <h2 class="gallery__content-title">Creatively designed</h2>
+              <p class="gallery__content-text">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="gallery__img">
+            <img src="./assets/img/gallery_5.jpg" alt="Medusa">
+
+            <div class="gallery__content">
+              <img src="./assets/img/icons/picture.svg" alt="Picture" class="gallery__content-img">
+
+              <h2 class="gallery__content-title">Creatively designed</h2>
+              <p class="gallery__content-text">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="gallery__img">
+            <img src="./assets/img/gallery_6.jpg" alt="Stairs">
+
+            <div class="gallery__content">
+              <img src="./assets/img/icons/picture.svg" alt="Picture" class="gallery__content-img">
+
+              <h2 class="gallery__content-title">Creatively designed</h2>
+              <p class="gallery__content-text">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+
+          <div class="gallery__img">
+            <img src="./assets/img/gallery_7.jpg" alt="Building">
+
+            <div class="gallery__content">
+              <img src="./assets/img/icons/picture.svg" alt="Picture" class="gallery__content-img">
+
+              <h2 class="gallery__content-title">Creatively designed</h2>
+              <p class="gallery__content-text">Lorem ipsum dolor sit</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="comments">
+      <div class="wrapper">
+        <span class="comments__action left">
+          <img src="./assets/img/icons/arrow.svg" alt="Arrow Left">
+        </span>
+
+        <div class="comments__item">
+          <img src="./assets/img/comments_img.jpg" alt="Comment" class="comments__item-img">
+
+          <div class="container">
+            <p class="comments__item-text">
+              “Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”
+            </p>
+
+            <h2 class="comments__item-author">Joshua Earle</h2>
+          </div>
+        </div>
+
+        <span class="comments__action right">
+          <img src="./assets/img/icons/arrow.svg" alt="Arrow Right">
+        </span>
+      </div>
+    </section>
+
+    <section class="clients">
+      <div class="wrapper">
+        <h2 class="clients__title title">Happy clients</h2>
+        <h2 class="clients__subtitle subtitle">What people say</h2>
+
+        <div class="row">
+          <div class="client">
+            <img src="./assets/img/client_1.png" alt="Client" class="client__img">
+
+            <div class="client__column">
+              <h2 class="client__fullname">Matthew Dix</h2>
+              <h2 class="client__position">Graphic Design</h2>
+
+              <p class="client__comment">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim.
+              </p>
+            </div>
+          </div>
+
+          <div class="client">
+            <img src="./assets/img/client_2.png" alt="Client" class="client__img">
+
+            <div class="client__column">
+              <h2 class="client__fullname">Nick Karvounis</h2>
+              <h2 class="client__position">Graphic Design</h2>
+
+              <p class="client__comment">
+                Sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                minim veniam
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="client">
+            <img src="./assets/img/client_3.png" alt="Client" class="client__img">
+
+            <div class="client__column">
+              <h2 class="client__fullname">Jaelynn Castillo</h2>
+              <h2 class="client__position">Graphic Design</h2>
+
+              <p class="client__comment">
+                Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam
+              </p>
+            </div>
+          </div>
+
+          <div class="client">
+            <img src="./assets/img/client_4.png" alt="Client" class="client__img">
+
+            <div class="client__column">
+              <h2 class="client__fullname">Mike Petrucci</h2>
+              <h2 class="client__position">Graphic Design</h2>
+
+              <p class="client__comment">
+                Dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+                ad minim.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blog">
+      <h2 class="blog__title title">Our stories</h2>
+      <h2 class="blog__subtitle subtitle">Latest blog</h2>
+
+      <div class="blog__row">
+        <div class="blog__item">
+          <div class="blog__item-img">
+            <img src="./assets/img/blog_1.jpg" alt="Blog">
+
+            <div class="blog__item-date">
+              <h2 class="blog__item-day">15</h2>
+              <p class="blog__item-month">Jan</p>
+            </div>
+          </div>
+
+          <h2 class="blog__item-title">Lorem ipsum dolor sit amet</h2>
+          <p class="blog__item-text">
+            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <div class="blog__item-rating">
+            <div class="blog__item-option">
+              <img src="./assets/img/icons/views.svg" alt="Views">
+              <span>542</span>
+            </div>
+
+            <div class="blog__item-option">
+              <img src="./assets/img/icons/comments.svg" alt="Comments">
+              <span>17</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog__item">
+          <div class="blog__item-img">
+            <img src="./assets/img/blog_2.jpg" alt="Blog">
+
+            <div class="blog__item-date">
+              <h2 class="blog__item-day">14</h2>
+              <p class="blog__item-month">Jan</p>
+            </div>
+          </div>
+
+          <h2 class="blog__item-title">Sed do eiusmod tempor</h2>
+          <p class="blog__item-text">
+            Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <div class="blog__item-rating">
+            <div class="blog__item-option">
+              <img src="./assets/img/icons/views.svg" alt="Views">
+              <span>992</span>
+            </div>
+
+            <div class="blog__item-option">
+              <img src="./assets/img/icons/comments.svg" alt="Comments">
+              <span>42</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="blog__item">
+          <div class="blog__item-img">
+            <img src="./assets/img/blog_3.jpg" alt="Blog">
+
+            <div class="blog__item-date">
+              <h2 class="blog__item-day">12</h2>
+              <p class="blog__item-month">Jan</p>
+            </div>
+          </div>
+
+          <h2 class="blog__item-title">Incididunt ut labore et dolore</h2>
+          <p class="blog__item-text">
+            Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          </p>
+
+          <div class="blog__item-rating">
+            <div class="blog__item-option">
+              <img src="./assets/img/icons/views.svg" alt="Views">
+              <span>1560</span>
+            </div>
+
+            <div class="blog__item-option">
+              <img src="./assets/img/icons/comments.svg" alt="Comments">
+              <span>98</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map">
+      <div class="wrapper">
+        <img src="./assets/img/icons/map.svg" alt="Map" class="map__icon">
+
+        <h2 class="map__text">Open map</h2>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="wrapper">
+        <div class="footer__inner">
+          <div class="footer__column">
+            <h2 class="footer__title">MoGo</h2>
+
+            <p class="footer__text">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+              aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+
+            <p class="footer__followers">
+              <span>15k</span>
+              followers
+            </p>
+
+            <div class="footer__links">
+              <span>Follow Us:</span>
+
+              <img src="./assets/img/icons/facebook.svg" alt="Facebook">
+              <img src="./assets/img/icons/twitter.svg" alt="Twitter">
+              <img src="./assets/img/icons/instagram.svg" alt="Instagram">
+              <img src="./assets/img/icons/pinterest.svg" alt="Pinterest">
+              <img src="./assets/img/icons/google plus.svg" alt="Google Plus">
+              <img src="./assets/img/icons/youtube.svg" alt="YouTube">
+              <img src="./assets/img/icons/dribbble.svg" alt="Dribbble">
+              <img src="./assets/img/icons/tumblr.svg" alt="Tumblr">
+            </div>
+
+            <form action="" class="footer__form">
+              <input class="footer__form-email" type="email" name="email" placeholder="Your Email...">
+              <input class="footer__form-submit" type="submit" value="Subscribe">
+            </form>
+          </div>
+
+          <div class="footer__column">
+            <h2 class="footer__subtitle">Blogs</h2>
+
+            <div class="footer__blogs">
+              <div class="footer__blog">
+                <img src="./assets/img/footer_blog-1.jpg" alt="Blog" class="footer__blog-img">
+  
+                <div class="footer__blog-content">
+                  <h2 class="footer__blog-title">Lorem ipsum dolor sit amet, consectetur adipiscing</h2>
+                  <p class="footer__blog-date">Jan 9, 2016</p>
+                </div>
+              </div>
+  
+              <div class="footer__blog">
+                <img src="./assets/img/footer_blog-2.jpg" alt="Blog" class="footer__blog-img">
+  
+                <div class="footer__blog-content">
+                  <h2 class="footer__blog-title">Consectetur adipiscing elit, sed do eiusmod tempor</h2>
+                  <p class="footer__blog-date">Jan 9, 2016</p>
+                </div>
+              </div>
+  
+              <div class="footer__blog">
+                <img src="./assets/img/footer_blog-3.jpg" alt="Blog" class="footer__blog-img">
+  
+                <div class="footer__blog-content">
+                  <h2 class="footer__blog-title">Sed do eiusmod tempor incididunt ut labore</h2>
+                  <p class="footer__blog-date">Jan 9, 2016</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="footer__column">
+            <h2 class="footer__subtitle">Instagram</h2>
+
+            <div class="footer__gallery">
+              <div class="footer__gallery-row">
+                <img src="./assets/img/footer_gallery-1.jpg" alt="Gallery image" class="footer__gallery-img">
+                <img src="./assets/img/footer_gallery-2.jpg" alt="Gallery image" class="footer__gallery-img">
+                <img src="./assets/img/footer_gallery-3.jpg" alt="Gallery image" class="footer__gallery-img">
+              </div>
+              
+              <div class="footer__gallery-row">
+                <img src="./assets/img/footer_gallery-4.jpg" alt="Gallery image" class="footer__gallery-img">
+                <img src="./assets/img/footer_gallery-5.jpg" alt="Gallery image" class="footer__gallery-img">
+                <img src="./assets/img/footer_gallery-6.jpg" alt="Gallery image" class="footer__gallery-img">
+              </div>
+              
+              <div class="footer__gallery-row">
+                <img src="./assets/img/footer_gallery-7.jpg" alt="Gallery image" class="footer__gallery-img">
+                <img src="./assets/img/footer_gallery-8.jpg" alt="Gallery image" class="footer__gallery-img">
+                <img src="./assets/img/footer_gallery-9.jpg" alt="Gallery image" class="footer__gallery-img">
+              </div>
+            </div>
+
+            <a href="#" class="footer__redirect">View more photos</a>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <h2 class="footer__bottom-text">
+            Copyright &copy; 2020 <span>Volodymyr Zaycev</span> 
+          </h2>
+        </div>
+      </div>
+    </footer>
+
+    <!-- SVG -->
+    <!-- =================== -->
+    <svg display="none">
+      <symbol id="facebook" width="12.031" height="25.62" viewBox="0 0 12.031 25.62">
+        <path fill-rule="evenodd"
+          d="M463.089,5312.2v4.12s-3.037-.3-3.8.86c-0.416.64-.169,2.5-0.206,3.84h4.029c-0.34,1.56-.584,2.62-0.835,3.98h-3.216v12.8h-5.582c0-3.95,0-8.55,0-12.75h-2.375v-4.03h2.349c0.12-2.95.165-5.87,1.629-7.35C456.728,5312,458.3,5312.2,463.089,5312.2Z"
+          transform="translate(-451.094 -5312.19)" />
+      </symbol>
+
+      <symbol id="twitter" width="25.594" height="20.79" viewBox="0 0 25.594 20.79">
+        <path fill-rule="evenodd"
+          d="M516.513,5314.6a5.393,5.393,0,0,1,4.151,1.65,8.665,8.665,0,0,0,2.691-.91l0.653-.36a5.272,5.272,0,0,1-1.7,2.47,2.512,2.512,0,0,1-.577.41v0.01a9.769,9.769,0,0,0,2.973-.8v0.01a8.535,8.535,0,0,1-1.781,2.04c-0.273.22-.547,0.44-0.82,0.65a15.155,15.155,0,0,1-.243,3.38c-1.312,5.89-4.788,9.89-10.289,11.61a15.83,15.83,0,0,1-7.432.31,19.915,19.915,0,0,1-3.087-1.01,11.506,11.506,0,0,1-1.487-.77c-0.154-.09-0.307-0.19-0.461-0.28a9.219,9.219,0,0,0,1.678.06c0.517-.08,1.023-0.06,1.5-0.16a10.77,10.77,0,0,0,3.151-1.14,5.97,5.97,0,0,0,1.423-.93,4.58,4.58,0,0,1-1.563-.28,5.294,5.294,0,0,1-3.332-3.36,5.194,5.194,0,0,0,2.345-.11,3.767,3.767,0,0,1-1.717-.69,5.032,5.032,0,0,1-2.473-4.49c0.18,0.08.359,0.17,0.538,0.25a5.152,5.152,0,0,0,1.1.31,1.444,1.444,0,0,0,.718.06h-0.026c-0.264-.3-0.695-0.51-0.961-0.84a5.365,5.365,0,0,1-1.179-4.76,6,6,0,0,1,.564-1.37c0.009,0,.017.01,0.026,0.01a3.044,3.044,0,0,0,.474.55,9.443,9.443,0,0,0,1.563,1.5,15.43,15.43,0,0,0,6.419,3.1,10.137,10.137,0,0,0,2.358.31,4.908,4.908,0,0,1,.025-2.47,5.165,5.165,0,0,1,2.973-3.52,5.9,5.9,0,0,1,1.166-.36C516.086,5314.65,516.3,5314.63,516.513,5314.6Z"
+          transform="translate(-499.094 -5314.59)" />
+      </symbol>
+
+      <symbol id="pinterest" width="19.594" height="25.62" viewBox="0 0 19.594 25.62">
+        <path fill-rule="evenodd"
+          d="M566.051,5328.85c-0.209.84-.42,1.71-0.638,2.56a18.96,18.96,0,0,1-.718,2.47,12.691,12.691,0,0,1-2.043,3.53c-0.575.66-.453,0.4-0.626,0.36-0.132-.03-0.143-0.16-0.169-0.34a19.314,19.314,0,0,1,.007-3.34,17.909,17.909,0,0,1,.589-3.47c0.484-2.07.946-4.09,1.435-6.17a1.422,1.422,0,0,0,.09-0.44,6.471,6.471,0,0,1-.429-1.7,5.448,5.448,0,0,1,.139-1.95,3.224,3.224,0,0,1,1.894-2.34,2.206,2.206,0,0,1,1.735.14,1.851,1.851,0,0,1,.867,1.24,4.463,4.463,0,0,1-.08,1.89c-0.267,1.22-.618,2.14-0.937,3.31a3.648,3.648,0,0,0-.189,1.81,2.119,2.119,0,0,0,.847,1.28,2.493,2.493,0,0,0,1.625.46,3.572,3.572,0,0,0,2.651-1.57,9.309,9.309,0,0,0,1.675-4.69,11.565,11.565,0,0,0,.07-2.01,5.473,5.473,0,0,0-1.127-3.12,5.282,5.282,0,0,0-2.512-1.71,8.285,8.285,0,0,0-3.747-.23,6.613,6.613,0,0,0-4.915,3.53,7.085,7.085,0,0,0-.837,3.41,4.438,4.438,0,0,0,.678,2.5c0.133,0.2.328,0.37,0.458,0.6a1.718,1.718,0,0,1-.119,1.16c-0.11.43-.122,1.01-0.618,1.02a1.377,1.377,0,0,1-.638-0.24,5.108,5.108,0,0,1-2.422-3.74,8.878,8.878,0,0,1,0-3.23,9.244,9.244,0,0,1,4.4-6.15,10.4,10.4,0,0,1,3.907-1.34,13.322,13.322,0,0,1,1.605-.13,9.627,9.627,0,0,1,4.326.8,8.862,8.862,0,0,1,2.98,2.15,8.14,8.14,0,0,1,1.834,3.31,7.922,7.922,0,0,1,.4,2.29,13.861,13.861,0,0,1-.308,2.37,9.315,9.315,0,0,1-3.838,6.45,6.924,6.924,0,0,1-4,1.1,4.642,4.642,0,0,1-1.983-.58A3.306,3.306,0,0,1,566.051,5328.85Z"
+          transform="translate(-557.906 -5312.22)" />
+      </symbol>
+
+      <symbol id="instagram" width="25.594" height="25.62" viewBox="0 0 25.594 25.62">
+        <path fill-rule="evenodd"
+          d="M632.7,5337.8H613.5a3.2,3.2,0,0,1-3.2-3.2v-19.2a3.2,3.2,0,0,1,3.2-3.2h19.2a3.2,3.2,0,0,1,3.2,3.2v19.2A3.2,3.2,0,0,1,632.7,5337.8Zm-9.6-17.76a4.954,4.954,0,0,0-4.5,2.88h0a0.244,0.244,0,0,1-.022.05c-0.047.11-.088,0.22-0.128,0.33-0.019.05-.04,0.1-0.057,0.15-0.037.11-.067,0.23-0.1,0.34-0.014.05-.03,0.11-0.042,0.16-0.026.12-.044,0.25-0.061,0.37-0.007.05-.017,0.1-0.023,0.15a5.074,5.074,0,0,0-.029.53,4.96,4.96,0,1,0,9.92,0,5.074,5.074,0,0,0-.029-0.53c-0.006-.05-0.016-0.1-0.023-0.15-0.017-.12-0.035-0.25-0.061-0.37-0.012-.05-0.028-0.11-0.042-0.16-0.028-.11-0.058-0.23-0.1-0.34-0.017-.05-0.038-0.1-0.057-0.15-0.04-.11-0.081-0.22-0.128-0.33a0.244,0.244,0,0,1-.022-0.05h0A4.954,4.954,0,0,0,623.1,5320.04Zm9.92-3.68a1.278,1.278,0,0,0-1.28-1.28h-2.56a1.278,1.278,0,0,0-1.28,1.28v2.56a1.278,1.278,0,0,0,1.28,1.28h2.56a1.278,1.278,0,0,0,1.28-1.28v-2.56Zm0,6.56h-2.36a7.84,7.84,0,1,1-15.12,0h-2.36v10.72a1.278,1.278,0,0,0,1.28,1.28h17.28a1.278,1.278,0,0,0,1.28-1.28v-10.72Z"
+          transform="translate(-610.312 -5312.19)" />
+      </symbol>
+    </svg>
+    <!-- =================== -->
   </body>
 </html>

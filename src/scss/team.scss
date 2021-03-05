@@ -1,0 +1,122 @@
+@import 'variables';
+
+.team {
+  padding: 100px 10px;
+
+  @media (max-width: 1024px) {
+    padding: 50px 10px;
+  }
+
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    gap: 20px;
+
+    @media (max-width: 1024px) {
+      margin-top: 50px;
+    }
+  }
+
+  &__card {
+    text-align: center;
+
+    &:hover {
+      .team__card-img > img,
+      .team__card-img::after {
+        opacity: 1;
+        transform: translate3d(-10px, -10px, 0);
+      }
+
+      .team__card-content {
+        opacity: 1;
+      }
+    }
+
+    &-img {
+      position: relative;
+      font-size: 0;
+      background: #AFE1D3;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+
+        width: 100%;
+        height: 100%;
+
+        top: 0;
+        left: 0;
+
+        background: linear-gradient(180deg, rgba(243, 129, 129, 1) 0%, rgba(252, 227, 138, 0.8) 100%);
+        transition: .2s;
+        opacity: 0;
+        z-index: 0;
+      }
+
+      & > img {
+        max-width: 100%;
+        transition: .2s;
+      }
+    }
+
+    &-content {
+      display: flex;
+      align-items: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(
+        calc(-50% - #{$transformX}), /* X Coordinate */
+        calc(-50% - #{$transformY}) /* Y Coordinate */
+      );
+      transition: .2s;
+      opacity: 0;
+      z-index: 1;
+    }
+
+    &-icon {
+      position: relative;
+      width: 50px;
+      height: 50px;
+      background: #fce38a;
+      transition: .2s;
+      cursor: pointer;
+
+      svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        fill: #F38181;
+      }
+
+      &:hover {
+        background: #DA8181;
+
+        svg {
+          fill: #fff;
+        }
+      }
+    }
+
+    &-fullname {
+      font-weight: 700;
+      font-size: 14px;
+      text-transform: uppercase;
+      margin: 30px 0 10px;
+      color: #333333;
+    }
+
+    &-position {
+      font-family: 'Roboto';
+      font-weight: 300;
+      font-style: italic;
+      font-size: 15px;
+      line-height: 1.6em;
+      color: #999999;
+    }
+  }
+}
