@@ -7,3 +7,14 @@
   margin: 0;
   padding: 0;
 }
+
+body {
+  background: #fff;
+}
+
+@import 'vars';
+
+.wrapper {
+  max-width: $wp;
+  margin: 0 auto;
+}
