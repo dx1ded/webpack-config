@@ -1,4 +1,5 @@
 const path = require('path')
+const fs = require('fs')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const HTMLWebpackPlugin = require('html-webpack-plugin')
 const CopyPlugin = require('copy-webpack-plugin')
@@ -81,3 +82,16 @@ module.exports = {
     port: 3000
   }
 }
+
+// Remove .keep Files
+
+const dirPath = (dir = '') => `src/assets/${dir}`
+const dirs = fs.readdirSync(dirPath())
+
+dirs.map(dir => {
+  const isKeepFile = fs.readdirSync(dirPath(dir)).includes('.keep')
+
+  if (isKeepFile) {
+    fs.rmSync(dirPath(`${dir}/.keep`))
+  }
+})
